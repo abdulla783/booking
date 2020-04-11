@@ -1,0 +1,20 @@
+{% extends 'Booking/base.html' %}
+
+{% block body %}
+
+<div class="container">
+    <h1>Welcome to Booking Details</h1>
+    <h4>Here is your Details</h4>
+    <h6>Booking Id:</h6><p>{{ booking.booking_id }}</p>
+    <h6>Name: </h6><p>{{ booking.customer_first_name }} {{ booking.customer_last_name }}</p>
+    <h6>Gender: </h6><p>{{ booking.gender }}</p>
+    <h6>Email: </h6><p>{{ booking.customer_email }}</p>
+    <h6>Check In: </h6><p>{{ booking.check_in_date }}</p>
+    <h6>Check Out: </h6><p>{{ booking.check_out_date }}</p>
+    <h6>Room Type: </h6><p>{{ booking.room }}</p>
+    <a href="/booking/already-booked/">Check another?</a>
+    <a href="/booking/walk-in/">Book another?</a>
+    
+</div>
+
+{% endblock %}
