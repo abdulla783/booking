@@ -9,7 +9,7 @@ class roomBooking(models.Model):
     gender_choices = [('M', 'Male'), ('F', 'Female')]
     gender = models.CharField(
                     choices=gender_choices,
-                    max_length=1,
+                    max_length=6,
                     default=None,
                     null=True)
     customer_email = models.EmailField()
